@@ -1,23 +1,22 @@
-package com.mumu17.copycat_wing.mixin;
+package com.mumu17.copycat_wing.mixin.copycats;
 
-import com.copycatsplus.copycats.content.copycat.flat_pane.CopycatFlatPaneBlock;
+import com.copycatsplus.copycats.content.copycat.half_panel.CopycatHalfPanelBlock;
 import dev.ryanhcode.sable.api.block.BlockSubLevelCustomCenterOfMass;
 import dev.ryanhcode.sable.api.block.BlockSubLevelLiftProvider;
 import dev.ryanhcode.sable.companion.math.JOMLConversion;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3dc;
 import org.spongepowered.asm.mixin.Mixin;
 
-import static com.mumu17.copycat_wing.Copycat_wing.copycat_wing$getNormal;
-
-@Mixin(CopycatFlatPaneBlock.class)
-public class MixinCopycatFlatPaneBlock implements BlockSubLevelLiftProvider, BlockSubLevelCustomCenterOfMass {
+@Mixin(CopycatHalfPanelBlock.class)
+public class MixinCopycatHalfPanelBlock implements BlockSubLevelLiftProvider, BlockSubLevelCustomCenterOfMass {
     @Override
     public @NotNull Direction sable$getNormal(BlockState blockState) {
-        return copycat_wing$getNormal(blockState);
+        return blockState.getValue(BlockStateProperties.FACING).getOpposite();
     }
 
     @Override

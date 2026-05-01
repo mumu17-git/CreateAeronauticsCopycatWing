@@ -1,6 +1,6 @@
-package com.mumu17.copycat_wing.mixin;
+package com.mumu17.copycat_wing.mixin.copycats;
 
-import com.copycatsplus.copycats.content.copycat.layer.CopycatLayerBlock;
+import com.copycatsplus.copycats.content.copycat.slope_layer.CopycatSlopeLayerBlock;
 import dev.ryanhcode.sable.api.block.BlockSubLevelCustomCenterOfMass;
 import dev.ryanhcode.sable.api.block.BlockSubLevelLiftProvider;
 import dev.ryanhcode.sable.companion.math.JOMLConversion;
@@ -12,8 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3dc;
 import org.spongepowered.asm.mixin.Mixin;
 
-@Mixin(CopycatLayerBlock.class)
-public class MixinCopycatLayerBlock implements BlockSubLevelLiftProvider, BlockSubLevelCustomCenterOfMass {
+@Mixin(CopycatSlopeLayerBlock.class)
+public class MixinCopycatSlopeLayerBlock implements BlockSubLevelLiftProvider, BlockSubLevelCustomCenterOfMass {
     @Override
     public @NotNull Direction sable$getNormal(BlockState blockState) {
         return blockState.getValue(BlockStateProperties.FACING).getOpposite();

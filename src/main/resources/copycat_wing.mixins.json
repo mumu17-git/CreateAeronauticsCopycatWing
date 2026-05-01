@@ -6,12 +6,20 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "MixinBearingContraption",
-    "MixinCopycatFlatPaneBlock",
-    "MixinCopycatHalfLayerBlock",
-    "MixinCopycatHalfPanelBlock",
-    "MixinCopycatLayerBlock",
-    "MixinCopycatSlabBlock",
-    "MixinCopycatSlopeLayerBlock"
+    "copycats.MixinCopycatBeamBlock",
+    "copycats.MixinCopycatFlatPaneBlock",
+    "copycats.MixinCopycatHalfLayerBlock",
+    "copycats.MixinCopycatHalfPanelBlock",
+    "copycats.MixinCopycatLayerBlock",
+    "copycats.MixinCopycatPanelBlock",
+    "copycats.MixinCopycatSlabBlock",
+    "copycats.MixinCopycatSliceBlock",
+    "copycats.MixinCopycatSlopeLayerBlock",
+    "copycats.MixinCopycatStackedHalfLayerBlock",
+    "copycats.MixinCopycatStepBlock",
+    "copycats.MixinCopycatVerticalHalfLayerBlock",
+    "copycats.MixinCopycatVerticalSliceBlock",
+    "copycats.MixinCopycatVerticalStepBlock"
   ],
   "client": [
   ],

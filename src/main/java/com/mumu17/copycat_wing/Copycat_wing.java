@@ -1,6 +1,14 @@
 package com.mumu17.copycat_wing;
 
+import com.copycatsplus.copycats.content.copycat.beam.CopycatBeamBlock;
+import com.copycatsplus.copycats.content.copycat.slice.CopycatSliceBlock;
+import com.copycatsplus.copycats.content.copycat.stacked_half_layer.CopycatStackedHalfLayerBlock;
+import com.copycatsplus.copycats.content.copycat.vertical_half_layer.CopycatVerticalHalfLayerBlock;
+import com.copycatsplus.copycats.content.copycat.vertical_slice.CopycatVerticalSliceBlock;
+import com.copycatsplus.copycats.content.copycat.vertical_step.CopycatVerticalStepBlock;
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.content.decoration.copycat.CopycatPanelBlock;
+import com.simibubi.create.content.decoration.copycat.CopycatStepBlock;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
