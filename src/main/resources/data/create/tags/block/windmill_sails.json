@@ -1,0 +1,10 @@
+{
+  "values": [
+    "copycats:copycat_slab",
+    "copycats:copycat_layer",
+    "copycats:copycat_half_panel",
+    "copycats:copycat_flat_pane",
+    "copycats:copycat_half_layer",
+    "copycats:copycat_slope_layer"
+  ]
+}
