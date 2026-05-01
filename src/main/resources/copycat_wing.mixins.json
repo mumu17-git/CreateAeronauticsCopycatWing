@@ -5,6 +5,7 @@
   "plugin": "com.mumu17.copycat_wing.mixin.MixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MixinBearingContraption",
     "MixinCopycatFlatPaneBlock",
     "MixinCopycatHalfLayerBlock",
     "MixinCopycatHalfPanelBlock",

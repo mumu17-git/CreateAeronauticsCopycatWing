@@ -5,6 +5,7 @@
     "copycats:copycat_half_panel",
     "copycats:copycat_flat_pane",
     "copycats:copycat_half_layer",
-    "copycats:copycat_slope_layer"
+    "copycats:copycat_slope_layer",
+    "create:copycat_panel"
   ]
 }
