@@ -22,7 +22,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = "CreateAeronauticsCopycatWing-${minecraft_version}"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -132,6 +132,7 @@ dependencies {
     implementation files("libs/dev.eriksonn.aeronautics.aeronautics-neoforge-1.21.1-1.2.1.jar")
     implementation files("libs/dev.ryanhcode.offroad.offroad-neoforge-1.21.1-1.2.1.jar")
     implementation files("libs/dev.simulated_team.simulated.simulated-neoforge-1.21.1-1.2.1.jar")
+    implementation files("libs/sable-companion-common-1.21.1-1.6.0.jar")
     implementation "curse.maven:jei-238222:7420587"
 }
 
@@ -148,7 +149,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
                              mod_license            : mod_license,
                              mod_version            : mod_version,
                              mod_authors            : mod_authors,
-                             mod_description        : mod_description]
+                             mod_description        : mod_description,
+                             copycats_version       : copycats_version,
+                             aeronautics_version    : aeronautics_version,]
     inputs.properties replaceProperties
     expand replaceProperties
     from "src/main/templates"

@@ -1,9 +1,16 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "org.halutho.copycat_wing.mixin",
+  "package": "com.mumu17.copycat_wing.mixin",
+  "plugin": "com.mumu17.copycat_wing.mixin.MixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MixinCopycatFlatPaneBlock",
+    "MixinCopycatHalfLayerBlock",
+    "MixinCopycatHalfPanelBlock",
+    "MixinCopycatLayerBlock",
+    "MixinCopycatSlabBlock",
+    "MixinCopycatSlopeLayerBlock"
   ],
   "client": [
   ],
