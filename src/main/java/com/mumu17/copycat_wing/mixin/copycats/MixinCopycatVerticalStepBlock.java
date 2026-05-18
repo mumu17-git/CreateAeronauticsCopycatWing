@@ -8,15 +8,22 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3dc;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(CopycatVerticalStepBlock.class)
 public class MixinCopycatVerticalStepBlock implements BlockSubLevelLiftProvider, BlockSubLevelCustomCenterOfMass {
+    @Shadow
+    @Final
+    public static DirectionProperty FACING;
+
     @Override
     public @NotNull Direction sable$getNormal(BlockState blockState) {
-        return blockState.getValue(BlockStateProperties.FACING).getOpposite();
+        return blockState.getValue(FACING).getOpposite();
     }
 
     @Override
